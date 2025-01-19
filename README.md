@@ -36,7 +36,7 @@ We could be using openai API for the chatbot’s NLP functionality. This simple 
     response = chat_with_learnie(user_input)
     print(f"Learnie: {response}")
 
-###This code demonstrates the base. The communication function would need capital.
+### This code demonstrates the base. The communication function would need capital.
  - This is a simple integration with OpenAI’s GPT model.
  - You input a query, and the bot returns a response.
  - You can tweak this for your app to make it more specific to educational tasks.
