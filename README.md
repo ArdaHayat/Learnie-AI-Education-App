@@ -17,8 +17,6 @@ We could be using openai API for the chatbot’s NLP functionality. This simple 
 
 import openai
 
-    # Your OpenAI API key (make sure to replace it with your actual key)
-    openai.api_key = 'your-api-key'
 
     def chat_with_learnie(user_input):
     response = openai.Completion.create(
