@@ -72,3 +72,37 @@ For Optical Character Recognition (OCR), could use Tesseract OCR with the pytess
  - You would use this feature to scan homework or educational materials and extract text.
  - Replace the image_path with the actual path to the image you want to process.
 
+
+
+        from solana.account import Account
+        from solana.rpc.api import Client
+        from solana.transaction import Transaction
+        from solana.system_program import TransferParams, transfer
+
+        # Connect to the Solana devnet (for testing purposes)
+        client = Client("https://api.devnet.solana.com")
+
+        # Generate a new account (or use an existing one)
+        sender_account = Account()  # Use sender's private key
+        receiver_account = Account()  # Use receiver's public key
+
+        # Set up transaction to transfer SOL
+        transaction = Transaction()
+
+        # Add a transfer instruction to the transaction
+        transaction.add(
+            transfer(
+                TransferParams(
+                    from_pubkey=sender_account.public_key(),
+                    to_pubkey=receiver_account.public_key(),
+                    lamports=1000000000  # Amount in lamports (1 SOL = 1e9 lamports)
+                )
+            )
+        )
+
+        # Send the transaction
+        response = client.send_transaction(transaction, sender_account)
+
+        # Print the transaction result
+        print(f"Transaction signature: {response['result']}")
+
