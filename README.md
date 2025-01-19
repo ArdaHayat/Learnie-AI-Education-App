@@ -124,3 +124,10 @@ Use Tesseract to extract text from images, such as scanned educational documents
 ### Blockchain Integration: 
 Use Solana to handle token-based rewards or payment systems (e.g., buying cartoon characters) for your app.
 
+### Learnie:
+Learnie is an app similar to Khan Academy or Kumon but with a twist. Courses from every main subject will be included. Learnie will use pre existing or new branded cartoon characters to animate the app. Cartoon characters will be able to communicate will children to help them on courses. If an example is needed, the ChatGPT app has a communication function with bare training and filtering (just for professional means). Our AI model will be trained to the best for no errors. Children will be able to purchase new cartoon characters to help them using Sol. Sol can also be awarded to the student in the backend after completing courses. There will be extended security measures to make sure nothing goes wrong. Learnie is the best way to get kids happy to do their schoolwork. It is the future, implementing AI and Regular Crypto usage is just the first step.
+### Our Summary:
+This GitHub demonstrates the bare minimum,the base and the motivation for Learnie. The repositories shound't demonstrate even 5% of any of the work that will be put into Learnie. The only factor settingback the development of Learnie is capital. 
+
+
+
