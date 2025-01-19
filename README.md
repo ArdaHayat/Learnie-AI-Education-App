@@ -1,6 +1,5 @@
 <video width="600" controls>
-  <source src="[https://github.com/your-username/your-repo-name/raw/main/video.mp4" type="video/mp4](https://github.com/ArdaHayat/Learnie-AI-Education-App/blob/e937ac8213163602e320582da1f8f4141f81d92f/LearnieAnimation)">
-  Your browser does not support the video tag.
+  <source src="[[[https://github.com/your-username/your-repo-name/raw/main/video.mp4" type="video/mp4]
 </video>
 
 # Learnie: AI-Powered Education for Kids
