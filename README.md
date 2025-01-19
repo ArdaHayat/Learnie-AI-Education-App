@@ -41,3 +41,29 @@ We could be using openai API for the chatbot’s NLP functionality. This simple 
  - You input a query, and the bot returns a response.
  - You can tweak this for your app to make it more specific to educational tasks.
 
+
+
+### OCR Functionality (using Tesseract OCR)
+For Optical Character Recognition (OCR), could use Tesseract OCR with the pytesseract Python library to extract text from images.
+
+        import pytesseract
+        from PIL import Image
+
+        # Path to the Tesseract executable (change this based on your installation path)
+        pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+
+        def ocr_from_image(image_path):
+        # Open an image file
+        img = Image.open(image_path)
+        
+        # Use Tesseract to do OCR on the image
+        text = pytesseract.image_to_string(img)
+    
+        return text
+
+        # Example usage
+        image_path = 'example_image.png'  # Replace with your image path
+        extracted_text = ocr_from_image(image_path)
+        print(f"Extracted Text: {extracted_text}")
+
+
