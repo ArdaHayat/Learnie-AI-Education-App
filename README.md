@@ -1,8 +1,3 @@
-[![Video Title](https://img.youtube.com/vi/OAgT0hXcPYQ/0.jpg)](https://www.youtube.com/watch?v=OAgT0hXcPYQ)
-
-
-
-
 # Learnie: AI-Powered Education for Kids
 Learnie uses AI to create interactive cartoon characters that help children with their homework and studies. 
 - Personalized learning through natural language conversations.
