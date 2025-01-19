@@ -108,5 +108,10 @@ For Optical Character Recognition (OCR), could use Tesseract OCR with the pytess
 
         # Print the transaction result
         print(f"Transaction signature: {response['result']}")
-   
+
+### Explanation:
+ - This is a simple example of transferring SOL between accounts on Solana’s devnet.
+ - You can adjust this to use Solana tokens or create a reward system where users earn tokens (paid through 
+   the blockchain).
+ - Replace sender_account and receiver_account with actual wallets in your app.
 
