@@ -104,3 +104,31 @@ response = client.send_transaction(transaction, sender_account)
 
 # Print the transaction result
 print(f"Transaction signature: {response['result']}")
+
+
+### NLP Chatbot (Using GPT-like model)
+
+We could be using openai API for the chatbot’s NLP functionality. This simple example shows how to send text to an OpenAI model like GPT and receive responses.:
+
+import openai
+
+# Your OpenAI API key (make sure to replace it with your actual key)
+openai.api_key = 'your-api-key'
+
+def chat_with_learnie(user_input):
+    response = openai.Completion.create(
+        engine="text-davinci-003",  # Can be adjusted based on the model
+        prompt=user_input,
+        max_tokens=100,  # Limits the response size
+        n=1,
+        stop=None,
+        temperature=0.7,  # Controls the randomness of the response
+    )
+
+    # Returning the chatbot's response
+    return response.choices[0].text.strip()
+
+# Example usage
+user_input = "What is the capital of France?"
+response = chat_with_learnie(user_input)
+print(f"Learnie: {response}")
