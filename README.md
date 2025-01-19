@@ -66,4 +66,9 @@ For Optical Character Recognition (OCR), could use Tesseract OCR with the pytess
         extracted_text = ocr_from_image(image_path)
         print(f"Extracted Text: {extracted_text}")
 
+### Explanation:
+
+ - This code extracts text from an image.
+ - You would use this feature to scan homework or educational materials and extract text.
+ - Replace the image_path with the actual path to the image you want to process.
 
