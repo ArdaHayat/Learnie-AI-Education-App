@@ -1,3 +1,5 @@
+![Learnie Logo](https://github.com/ArdaHayat/Learnie-AI-Education-App/raw/d0619ac613b7e05d587ee7857cdb39bc74822d27/Logo.png)
+
 # Learnie: AI-Powered Education for Kids
 Learnie uses AI to create interactive cartoon characters that help children with their homework and studies. 
 - Personalized learning through natural language conversations.
