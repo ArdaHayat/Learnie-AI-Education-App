@@ -73,6 +73,9 @@ For Optical Character Recognition (OCR), could use Tesseract OCR with the pytess
  - Replace the image_path with the actual path to the image you want to process.
 
 
+### Blockchain Integration (using Solana with our understanding)
+ - For integrating Solana blockchain into Solana app, you'll need to use Solana’s SDK for Python or JavaScript.
+
 
         from solana.account import Account
         from solana.rpc.api import Client
@@ -105,4 +108,5 @@ For Optical Character Recognition (OCR), could use Tesseract OCR with the pytess
 
         # Print the transaction result
         print(f"Transaction signature: {response['result']}")
+   
 
