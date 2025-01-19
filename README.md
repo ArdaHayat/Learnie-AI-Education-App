@@ -48,3 +48,59 @@ response = client.send_transaction(transaction, sender_account)
 # Print the transaction result
 print(f"Transaction signature: {response['result']}")
 
+
+### Explanation:
+- Use triple backticks (```) to create a code block, followed by the programming language name (in this case, `python`) for syntax highlighting.
+- The code itself is placed between the backticks.
+
+### 2. **Steps to Edit `README.md`**:
+
+1. Open your GitHub repository.
+2. Navigate to the `README.md` file.
+3. Click on the **pencil icon** to edit the file.
+4. Paste the code sample into the file.
+5. Commit the changes.
+
+After committing, the code will appear as a properly formatted block in your `README.md` when viewed on GitHub.
+
+### 3. **View Example in `README.md`**:
+Once you push the changes to your GitHub repo, your `README.md` will display the code snippet like this:
+
+---
+
+### Solana Blockchain Integration (Transaction Example)
+
+To interact with the Solana blockchain, you can use the following Python code to transfer tokens:
+
+```python
+from solana.account import Account
+from solana.rpc.api import Client
+from solana.transaction import Transaction
+from solana.system_program import TransferParams, transfer
+
+# Connect to the Solana devnet (for testing purposes)
+client = Client("https://api.devnet.solana.com")
+
+# Generate a new account (or use an existing one)
+sender_account = Account()  # Use sender's private key
+receiver_account = Account()  # Use receiver's public key
+
+# Set up transaction to transfer SOL
+transaction = Transaction()
+
+# Add a transfer instruction to the transaction
+transaction.add(
+    transfer(
+        TransferParams(
+            from_pubkey=sender_account.public_key(),
+            to_pubkey=receiver_account.public_key(),
+            lamports=1000000000  # Amount in lamports (1 SOL = 1e9 lamports)
+        )
+    )
+)
+
+# Send the transaction
+response = client.send_transaction(transaction, sender_account)
+
+# Print the transaction result
+print(f"Transaction signature: {response['result']}")
